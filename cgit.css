@@ -592,10 +592,11 @@ div#cgit div.footer {
 	color: #666;
 }
 div#cgit div.footer a {
-	color: #00c;
+	color: #666;
 	text-decoration: none;
 }
 div#cgit div.footer a:hover {
+	color: #00c;
 	text-decoration: underline;
 }
 div#cgit a.branch-deco {
