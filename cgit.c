@@ -545,7 +545,7 @@ static void choose_readme(struct cgit_repo *repo)
 static void print_no_repo_clone_urls(const char *url)
 {
         html("<tr><td>");
-        html(<a rel='vcs-git' href='");
+        html("<a rel='vcs-git' href='");
         html_url_path(url);
         html("' title='");
         html_attr(ctx.repo->name);
