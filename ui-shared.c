@@ -804,6 +804,16 @@ void cgit_print_docend(void)
 		    cgit_version);
 		cgit_print_date(time(NULL), FMT_LONGDATE, ctx.cfg.local_time);
 		html("</div>\n");
+		html("<script type='text/javascript'>\n");
+		html("  var _gaq = _gaq || [];\n");
+		html("  _gaq.push(['_setAccount', 'UA-135234-5']);\n");
+		html("  _gaq.push(['_trackPageview']);\n");
+		html("  (function() {\n");
+		html("    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n");
+		html("    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n");
+		html("    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n");
+		html("  })();\n");
+		html("</script>\n");
 	}
 	html("</div> <!-- id=cgit -->\n");
 	html("</body>\n</html>\n");
