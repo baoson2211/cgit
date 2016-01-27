@@ -46,14 +46,39 @@ static void print_text_buffer(const char *name, char *buf, unsigned long size)
 	if (ctx.repo->source_filter) {
 		char *filter_arg = xstrdup(name);
 		html("<td class='lines'><pre><code>");
+
+		//html("<style>\n");
+		//html("body.hl { background-color:#e0eaee; }\n");
+		//html("pre.hl  { color:#000000; background-color:#e0eaee; font-size:10pt; font-family:'Courier New',monospace;}\n");
+		//html(".hl.num { color:#b07e00; }\n");
+		//html(".hl.esc { color:#ff00ff; }\n");
+		//html(".hl.str { color:#bf0303; }\n");
+		//html(".hl.pps { color:#818100; }\n");
+		//html(".hl.slc { color:#838183; font-style:italic; }\n");
+		//html(".hl.com { color:#838183; font-style:italic; }\n");
+		//html(".hl.ppc { color:#008200; }\n");
+		//html(".hl.opt { color:#000000; }\n");
+		//html(".hl.ipl { color:#0057ae; }\n");
+		//html(".hl.lin { color:#555555; }\n");
+		//html(".hl.kwa { color:#000000; font-weight:bold; }\n");
+		//html(".hl.kwb { color:#0057ae; }\n");
+		//html(".hl.kwc { color:#000000; font-weight:bold; }\n");
+		//html(".hl.kwd { color:#010181; }\n");
+		//html("</style>\n");
+
+		//html("<div class=\"highlight\">");
+		//html("<pre>\n");
+
 		cgit_open_filter(ctx.repo->source_filter, filter_arg);
 		html_raw(buf, size);
 		cgit_close_filter(ctx.repo->source_filter);
 		free(filter_arg);
+
+		//html("</pre>\n</div>\n");
+
 		html("</code></pre></td></tr></table>\n");
 		return;
 	}
-
 	html("<td class='lines'><pre><code>");
 	html_txt(buf);
 	html("</code></pre></td></tr></table>\n");
