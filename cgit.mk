@@ -20,7 +20,7 @@ $(CGIT_PREFIX)VERSION: force-version
 CGIT_CFLAGS += -DCGIT_CONFIG='"$(CGIT_CONFIG)"'
 CGIT_CFLAGS += -DCGIT_SCRIPT_NAME='"$(CGIT_SCRIPT_NAME)"'
 CGIT_CFLAGS += -DCGIT_CACHE_ROOT='"$(CACHE_ROOT)"'
-CGIT_CFLAGS += -lm 
+CGIT_CFLAGS += -lm
 #CGIT_CFLAGS += -lstdc++
 CGIT_CFLAGS += -Wall -O2 -I/usr/include/mysql/ -lmysqlclient
 
