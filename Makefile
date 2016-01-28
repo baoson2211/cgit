@@ -82,6 +82,10 @@ install: all
 	$(INSTALL) -m 0755 -d $(DESTDIR)$(CGIT_DATA_PATH)
 	$(INSTALL) -m 0644 cgit.css $(DESTDIR)$(CGIT_DATA_PATH)/cgit.css
 	$(INSTALL) -m 0644 cgit.png $(DESTDIR)$(CGIT_DATA_PATH)/cgit.png
+	$(INSTALL) -m 0644 about.html $(DESTDIR)$(CGIT_DATA_PATH)/about.html	
+	$(INSTALL) -m 0644 git-logo.png $(DESTDIR)$(CGIT_DATA_PATH)/git-logo.png
+	$(INSTALL) -m 0644 git-cheat-sheet-001.jpg $(DESTDIR)$(CGIT_DATA_PATH)/git-cheat-sheet-001.jpg
+	$(INSTALL) -m 0644 git-cheat-sheet-002.jpg $(DESTDIR)$(CGIT_DATA_PATH)/git-cheat-sheet-002.jpg
 	$(INSTALL) -m 0644 favicon.ico $(DESTDIR)$(CGIT_DATA_PATH)/favicon.ico
 	$(INSTALL) -m 0644 robots.txt $(DESTDIR)$(CGIT_DATA_PATH)/robots.txt
 	$(INSTALL) -m 0755 -d $(DESTDIR)$(filterdir)
