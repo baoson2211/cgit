@@ -16,6 +16,7 @@
 #include "ui-blob.h"
 #include "ui-summary.h"
 #include "scan-tree.h"
+#include "mysql/mysql.h"
 
 const char *cgit_version = CGIT_VERSION;
 
