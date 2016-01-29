@@ -14,7 +14,8 @@ div#cgit a {
 }
 
 div#cgit a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	font-style: italic;
 }
 
 div#cgit table {
@@ -62,7 +63,7 @@ div#cgit table#header td.sub {
 }
 
 div#cgit table.tabs {
-	border-bottom: solid 3px #ccc;
+	border-bottom: solid 3px #C00;
 	border-collapse: collapse;
 	margin-top: 2em;
 	margin-bottom: 0px;
@@ -76,13 +77,14 @@ div#cgit table.tabs td {
 
 div#cgit table.tabs td a {
 	padding: 2px 0.75em;
-	color: #777;
+	color: #222;
 	font-size: 110%;
 }
 
 div#cgit table.tabs td a.active {
-	color: #000;
-	background-color: #ccc;
+	color: #FFF;
+	/*background-color: #ccc;*/
+	background-color: #C00; 
 }
 
 div#cgit table.tabs td.form {
@@ -110,7 +112,7 @@ div#cgit div.path {
 div#cgit div.content {
 	margin: 0px;
 	padding: 2em;
-	border-bottom: solid 3px #ccc;
+	border-bottom: solid 3px #c00;
 }
 
 
